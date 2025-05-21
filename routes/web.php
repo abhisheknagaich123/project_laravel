@@ -16,6 +16,9 @@ use App\Http\Controllers\FormController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/good', function () {
+    return "noce work abhishek nagaich";
+});
 
 Auth::routes();
 
