@@ -13,7 +13,7 @@ class FormController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'remarks' => 'nullable|string|max:1000',
-            'photo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'photo' => 'required|image|mimes:jpeg,png,jpg|max:5048',
         ]);
 
         $photoPath = $request->file('photo')->store('uploads', 'public');
